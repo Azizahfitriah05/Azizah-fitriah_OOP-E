@@ -1,0 +1,37 @@
+# Program Python: Kelas Kendaraan dan Motor
+#Objek -> Surat2,kondisi_Mesin,Merk,Model,Harga,CC,Warna
+#  nama_Nim :Azizah fitriah_24241174
+          
+class Kendaraan:
+    def __init__(self, merk, tahun, warna):
+        self.merk = merk
+        self.tahun = tahun
+        self.warna = warna
+
+    def info(self):
+        return f"Kendaraan: {self.merk}, Tahun: {self.tahun}, Warna: {self.warna}"
+
+
+class Motor(Kendaraan):
+    def __init__(self, merk, tahun, warna, jenis, kapasitas_mesin):
+        super().__init__(merk, tahun, warna)
+        self.jenis = jenis
+        self.kapasitas_mesin = kapasitas_mesin
+
+    def nyalakan_mesin(self):
+        return f"Mesin motor {self.merk} dinyalakan..."
+
+    def info_motor(self):
+        return (f"Motor: {self.merk}, Jenis: {self.jenis}, Tahun: {self.tahun}, "
+                f"Warna: {self.warna}, Kapasitas Mesin: {self.kapasitas_mesin}cc")
+
+
+# Contoh penggunaan
+motor1 = Motor("Honda", 2022, "Merah", "Sport", 150)
+motor2 = Motor("Yamaha", 2023, "Hitam", "Matic", 125)
+
+print(motor1.info_motor())
+print(motor1.nyalakan_mesin())
+
+print(motor2.info_motor())
+print(motor2.nyalakan_mesin())
