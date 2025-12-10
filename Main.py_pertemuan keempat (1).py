@@ -39,7 +39,7 @@ class Mhs_bebas_pustaka(Mhs_alumni, Mhs_aktif):
 ktm = KTM("Teknoogi Informasi", 2024)
 ijazah = Ijazah("Azizah Fitriah", "24241174")
 beasiswa = Beasiswa("Teknologi Informasi", 2024)
-mhs_bebas_pustaka = Mhs_bebas_pustaka("Ahmad Alfarizi", "24241174", "Teknologi Informasi", 2024)
+mhs_bebas_pustaka = Mhs_bebas_pustaka("Azizah Fitriah", "24241174", "Teknologi Informasi", 2024)
 
 print(ktm.tampilkan_info())
 print(ijazah.tampilkan_info())
